@@ -16,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/aelbore/aria-server/issues"
   },
-  "homepage": "https://github.com/aelbore/aria-server#readme"
+  "homepage": "https://github.com/aelbore/aria-server#readme",
+  "devDependencies": {
+    "@types/express": "^4.16.1",
+    "express": "^4.16.4",
+    "ts-node": "^8.0.2",
+    "tslib": "^1.9.3",
+    "typescript": "^3.3.1"
+  }
 }
