@@ -6,14 +6,22 @@
     "aria-serve": "./bin/aria-serve.js"
   },
   "scripts": {
-    "build": "aria-build -d"
+    "build": "aria-build -d",
+    "test": "aria-mocha --check-coverage",
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/aelbore/aria-server.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "hmr",
+    "hot",
+    "rollup",
+    "build",
+    "es-modules"
+  ],
+  "author": "Arjay Elbore",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/aelbore/aria-server/issues"
@@ -23,6 +31,16 @@
     "aria-build": ">= ^0.2.2",
     "aria-fs": ">= ^0.2.2",
     "aria-mocha": ">= ^0.2.2"
+  },
+  "devDependencies": {
+    "@types/mocha": "^7.0.2",
+    "@types/mock-fs": "^4.10.0",
+    "@types/node": "^13.13.4",
+    "coveralls": "^3.1.0",
+    "mock-fs": "^4.12.0",
+    "mock-require": "^3.0.3",
+    "sinon": "^9.0.2",
+    "typescript": "^3.8.2"
   },
   "dependencies": {
     "sirv-cli": "0.4.5"
