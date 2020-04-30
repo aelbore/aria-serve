@@ -1,10 +1,12 @@
 {
-  "name": "aria-server",
-  "version": "1.0.0",
+  "name": "aria-serve",
+  "version": "0.2.2",
   "description": "",
-  "main": "index.js",
+  "bin": {
+    "aria-serve": "./bin/aria-serve.js"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "aria-build -d"
   },
   "repository": {
     "type": "git",
@@ -17,11 +19,12 @@
     "url": "https://github.com/aelbore/aria-server/issues"
   },
   "homepage": "https://github.com/aelbore/aria-server#readme",
-  "devDependencies": {
-    "@types/express": "^4.16.1",
-    "express": "^4.16.4",
-    "ts-node": "^8.0.2",
-    "tslib": "^1.9.3",
-    "typescript": "^3.3.1"
+  "peerDependencies": {
+    "aria-build": ">= ^0.2.2",
+    "aria-fs": ">= ^0.2.2",
+    "aria-mocha": ">= ^0.2.2"
+  },
+  "dependencies": {
+    "sirv-cli": "0.4.5"
   }
 }
