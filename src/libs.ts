@@ -1,13 +1,20 @@
 /* istanbul ignore file */
 
 const sirvCli = require('sirv-cli/boot')
+const hmrPlugin = require('rollup-plugin-hot')
 
-export { sirvCli }
+export { sirvCli, hmrPlugin }
 
 export { 
-  hmrBuild, getAriaConfig,
+  getAriaConfig,
   parseConfig, getPackage, 
   parsePlugins, clean, 
   buildES, TSRollupConfig,
-  PluginOptions
+  PluginOptions,
+  watch,
+  rollupBuild,
+  CreateRollupConfigOptions, 
+  _createTSRollupConfig,
+  RollupConfigBase,
+  ConfigResult
 } from 'aria-build'

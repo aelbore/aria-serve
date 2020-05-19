@@ -29,8 +29,7 @@
   "homepage": "https://github.com/aelbore/aria-server#readme",
   "peerDependencies": {
     "aria-build": ">= ^0.3.0",
-    "aria-fs": ">= ^0.3.0",
-    "aria-mocha": ">= ^0.3.0"
+    "aria-fs": ">= ^0.3.0"
   },
   "devDependencies": {
     "@types/mocha": "^7.0.2",
@@ -43,6 +42,7 @@
     "typescript": "^3.9.2"
   },
   "dependencies": {
-    "sirv-cli": "0.4.5"
+    "sirv-cli": "0.4.5",
+    "rollup-plugin-hot": "^0.0.22"
   }
 }
