@@ -9,6 +9,7 @@ import { ServeCommandLineOptions } from './options'
 
 describe('handler', () => {
   let libs: typeof import('./libs')
+  let hmrBuild: typeof import('./hmr-build')
 
   function createStubs() {
     const parsePluginsStub = sinon.spy(libs, 'parsePlugins')
@@ -27,7 +28,7 @@ describe('handler', () => {
       .returns(Promise.resolve(pkg))
 
     const sirvCliStub = sinon.stub(libs, 'sirvCli').returns(void 0)
-    const hmrBuildStub = sinon.stub(libs, 'hmrBuild').returns(void 0)
+    const hmrBuildStub = sinon.stub(hmrBuild, 'hmrBuild').returns(void 0)
 
     return {
       parsePluginsStub,
@@ -40,7 +41,7 @@ describe('handler', () => {
   }
 
   before(async () => {
-    libs = await import('./libs')
+    [ hmrBuild, libs ] = await Promise.all([ import('./hmr-build'), import('./libs') ])
   })
 
   afterEach(() => {

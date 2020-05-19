@@ -1,11 +1,13 @@
 import { join } from 'path'
 
 import { 
-  hmrBuild, getAriaConfig, 
+  getAriaConfig, 
   parseConfig, getPackage, 
   parsePlugins, clean, 
   sirvCli
 } from './libs'
+
+import { hmrBuild } from './hmr-build'
 
 import { ServeCommandLineOptions } from './options'
 import { createConfig } from './build-es'
