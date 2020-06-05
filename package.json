@@ -34,15 +34,15 @@
   "devDependencies": {
     "@types/mocha": "^7.0.2",
     "@types/mock-fs": "^4.10.0",
-    "@types/node": "^14.0.6",
+    "@types/node": "^14.0.11",
     "coveralls": "^3.1.0",
     "mock-fs": "^4.12.0",
     "mock-require": "^3.0.3",
     "sinon": "^9.0.2",
-    "typescript": "^3.9.3"
+    "typescript": "^3.9.5"
   },
   "dependencies": {
     "sirv-cli": "0.4.6",
-    "rollup-plugin-hot": "^0.0.25"
+    "rollup-plugin-hot": "^0.0.26"
   }
 }
