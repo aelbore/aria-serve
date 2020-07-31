@@ -21,15 +21,15 @@
     "build",
     "es-modules"
   ],
-  "author": "Arjay Elbore",
-  "license": "ISC",
+  "author": "Arjay Elbore <aelbore.sg@gmail.com>",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/aelbore/aria-server/issues"
   },
   "homepage": "https://github.com/aelbore/aria-server#readme",
   "peerDependencies": {
-    "aria-build": ">= ^0.3.0",
-    "aria-fs": ">= ^0.3.0"
+    "aria-build": ">=0.5.0",
+    "aria-fs": ">=0.5.0"
   },
   "devDependencies": {
     "@types/mocha": "^8.0.0",
