@@ -34,7 +34,7 @@
   "devDependencies": {
     "@types/mocha": "^8.2.0",
     "@types/mock-fs": "^4.13.0",
-    "@types/node": "^14.14.16",
+    "@types/node": "^14.14.19",
     "coveralls": "^3.1.0",
     "mock-fs": "^4.13.0",
     "mock-require": "^3.0.3",
